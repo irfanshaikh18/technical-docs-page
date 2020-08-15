@@ -1,0 +1,322 @@
+<!-- 
+author: Irfan Shaikh
+date: 14/08/2020
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical-Docs Page</title>
+    <link rel="icon" href="document.ico">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- [NAVBAR] -->
+    <nav id="navbar">
+        <header class="nav-header">Contents</header>
+        <ul class="nav-content">
+            <li><a class="nav-link" href="#about-express-module">Express</a></li>
+            <li><a class="nav-link" href="#Installation">Installation</a></li>
+            <li><a class="nav-link" href="#Features">Features</a></li>
+            <li><a class="nav-link" href="#Docs_&_Community">Docs & Community</a></li>
+            <li><a class="nav-link" href="#Quick_Start">Quick Start</a></li>
+            <li><a class="nav-link" href="#Philosophy">Philosophy</a></li>
+            <li><a class="nav-link" href="#Examples">Examples</a></li>
+            <li><a class="nav-link" href="#Tests">Tests</a></li>
+            <li><a class="nav-link" href="#Contributing">Contributing</a></li>
+            <li><a class="nav-link" href="#People">People</a></li>
+            <li><a class="nav-link" href="#License">License</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <!-- [NAVBAR] ENDS here-->
+
+
+    <!-- [CONTAINER] -->
+    <div class="container">
+
+        <!--***** About-Express-Module STARTS here *****-->
+        <div id="about-express-module">
+            <div class="module-logo">
+                <img class="express-logo" src="images/express.png" alt="express logo" />
+            </div>
+
+            <div class="module-intro">
+                <p>
+                    Fast, unopinionated, minimalist web framework for
+                    <strong> <a href="https://nodejs.org/en/">node</a></strong>.
+                </p>
+                <a href="https://www.npmjs.com/package/express"><img src="images/npm-version.svg"
+                        alt="npm version svg" /></a>
+                <a href="https://www.npmjs.com/package/express"><img src="images/downloads.svg"
+                        alt="download svg" /></a>
+                <a href="https://travis-ci.org/expressjs/express"><img src="images/linux.svg" alt="linux svg" /></a>
+                <a href="https://ci.appveyor.com/project/dougwilson/express"><img src="images/windows.svg"
+                        alt="windows svg" /></a>
+                <a href="https://coveralls.io/r/expressjs/express?branch=master"><img src="images/coverage.svg"
+                        alt="coverage svg" /></a>
+
+                <div class="editor">
+                    <div>
+                        const<span>&nbsp;</span><span
+                            class="purple">express</span><span>&nbsp;</span>=<span>&nbsp;</span><span
+                            class="purple">require</span>(<span class="redish">'express'</span>)
+                    </div>
+                    <div>
+                        const<span>&nbsp;</span><span
+                            class="purple">app</span><span>&nbsp;</span>=<span>&nbsp;</span><span
+                            class="redish">express</span>()
+                    </div>
+                    <br />
+                    <div>
+                        <span class="green">app</span>.<span class="purple">get</span>(<span>'/'</span>, function(<span
+                            class="green">req</span>,<span class="green">res</span>) {
+                    </div>
+                    <div>
+                        &nbsp;<span class="green">res</span>.<span class="purple">send</span>(<span
+                            class="redish">'Hello World'</span>)
+                    </div>
+                    <div>})</div>
+                    <div>
+                        <span class="green">app</span>.<span>listen</span>(<span class="redish">3000</span>)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--**X*** About-Express-Module ENDS here **X**-->
+
+
+        <!--***** Main Section STARTS here *****-->
+
+        <main id="main-doc">
+            <!-- Installation -->
+            <section class="main-section" id="Installation">
+                <header>Installation</header>
+                <hr />
+                <p>
+                    This is a <a href="https://nodejs.org/en/">Node.js</a> module
+                    available through the
+                    <a href="https://www.npmjs.com/">npm registry</a>.
+                </p>
+                <p>
+                    Before installing,<a href="https://nodejs.org/en/download/">download and install Node.js</a>.
+                    Node.js 0.10 or higher is required.
+                </p>
+                <p>
+                    Installation is done using the
+                    <code>
+              <a
+                href="https://docs.npmjs.com/downloading-and-installing-packages-locally"
+              >
+                npm install</a
+              > </code><a href="https://docs.npmjs.com/downloading-and-installing-packages-locally">command</a>:
+                </p>
+                <code>$ npm install express</code>
+                <p>
+                    Follow
+                    <a href="http://expressjs.com/en/starter/installing.html">our installing guide</a>
+                    for more information.
+                </p>
+            </section>
+
+            <!-- Features -->
+            <section class="main-section" id="Features">
+                <header>Features</header>
+                <hr />
+                <ul>
+                    <li>Robust routing</li>
+                    <li>Focus on high performance</li>
+                    <li>Super-high test coverage</li>
+                    <li>HTTP helpers (redirection, caching, etc)</li>
+                    <li>View system supporting 14+ template engines</li>
+                    <li>Content negotiation</li>
+                    <li>Executable for generating applications quickly</li>
+                </ul>
+            </section>
+
+            <!-- Docs and Community -->
+            <section class="main-section" id="Docs_&_Community">
+                <header>Docs & Community</header>
+                <hr />
+                <ul>
+                    <li>
+                        <a href="http://expressjs.com/">Website and Documentation</a> -
+                        [<a href="https://github.com/expressjs/expressjs.com">website repo</a>]
+                    </li>
+                    <li>
+                        <a href="https://webchat.freenode.net/#express">#express</a> on
+                        freenode IRC
+                    </li>
+                    <li>
+                        <a href="https://github.com/expressjs">GitHub Organization</a> for
+                        Official Middleware & Modules
+                    </li>
+                    <li>
+                        Visit the
+                        <a href="https://github.com/expressjs/express/wiki"> Wiki</a>
+                    </li>
+                    <li>
+                        <a href="https://groups.google.com/forum/#!forum/express-js">
+                            Google Group</a> for discussion
+                    </li>
+                    <li>
+                        <a href="https://gitter.im/expressjs/express">Gitter</a>
+                        for support and discussion
+                    </li>
+                </ul>
+                <p>
+                    <strong>PROTIP</strong> Be sure to read
+                    <a href="https://github.com/expressjs/express/wiki/Migrating-from-3.x-to-4.x">Migrating from 3.x to
+                        4.x</a>
+                    as well as
+                    <a href="https://github.com/expressjs/express/wiki/New-features-in-4.x">New features in 4.x.</a>
+                </p>
+                <h3>Security Issues</h3>
+                <p>
+                    If you discover a security vulnerability in Express, please see
+                    <a href="https://github.com/expressjs/express/blob/HEAD/Security.md">Security Policies and
+                        Procedures</a>.
+                </p>
+            </section>
+
+            <!-- Quick Start -->
+            <section class="main-section" id="Quick_Start">
+                <header>Quick Start</header>
+                <hr />
+                <p>
+                    The quickest way to get started with express is to utilize the
+                    executable
+                    <code><a href="https://github.com/expressjs/generator"
+                >express(1)</a
+              ></code>
+                    to generate an application as shown below:
+                </p>
+                <p>
+                    Install the executable. The executable's major version will match
+                    Express's:
+                </p>
+                <code>$ npm install -g express-generator@4</code>
+                <p>Create the app:</p>
+                <code>
+            $ express /tmp/foo && cd /tmp/foo
+          </code>
+                <p>Install dependencies:</p>
+                <code>$ npm install</code>
+                <p>Start the server:</p>
+                <code>$ npm start</code>
+            </section>
+
+            <!-- Philosophy -->
+            <section class="main-section" id="Philosophy">
+                <header>Philosophy</header>
+                <hr />
+                <p>
+                    The Express philosophy is to provide small, robust tooling for HTTP
+                    servers, making it a great solution for single page applications,
+                    web sites, hybrids, or public HTTP APIs.
+                </p>
+
+                <p>
+                    Express does not force you to use any specific ORM or template
+                    engine. With support for over 14 template engines via
+                    <a href="https://github.com/tj/consolidate.js">Consolidate.js</a>,
+                    you can quickly craft your perfect framework.
+                </p>
+            </section>
+
+            <!-- Examples -->
+            <section class="main-section" id="Examples">
+                <header>Examples</header>
+                <hr />
+                <p>
+                    To view the examples, clone the Express repo and install the
+                    dependencies:
+                </p>
+                <code>
+            $ git clone git://github.com/expressjs/express.git --depth 1 $ cd
+            express $ npm install
+          </code>
+                <p>Then run whichever example you want:</p>
+                <code>$ node examples/content-negotiation</code>
+            </section>
+
+            <!-- Tests -->
+            <section class="main-section" id="Tests">
+                <header>Tests</header>
+                <hr />
+                <p>
+                    To run the test suite, first install the dependencies, then run
+                    <code>npm test</code>:
+                </p>
+                <code>
+            $ npm install $ npm test
+          </code>
+            </section>
+
+            <!-- Contributing -->
+            <section class="main-section" id="Contributing">
+                <header>Contributing</header>
+                <hr />
+                <a href="https://github.com/expressjs/express/blob/HEAD/Contributing.md">Contributing Guide</a>
+            </section>
+
+            <!-- People -->
+            <section class="main-section" id="People">
+                <header>People</header>
+                <hr />
+                <p>
+                    The original author of Express is
+                    <a href="https://github.com/tj">TJ Holowaychuk</a>
+                </p>
+                <p>
+                    The current lead maintainer is
+                    <a href="https://github.com/dougwilson">Douglas Christopher Wilson</a>
+                </p>
+                <a href="https://github.com/expressjs/express/graphs/contributors">List of all contributors</a>
+            </section>
+
+            <!-- License -->
+            <section class="main-section" id="License">
+                <header>License</header>
+                <hr />
+                <a href="https://github.com/expressjs/express/blob/HEAD/LICENSE">MIT</a>
+            </section>
+
+            <!-- Reference -->
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <hr />
+                <p>
+                    All the documentation in this page is taken from
+                    <strong>
+                        <a href="https://www.npmjs.com/package/express#installation">npm express
+                            documentations</a></strong>.
+                </p>
+            </section>
+        </main>
+        <!--**X** Main Section ENDS here **X**-->
+
+
+        <!--***** Footer STARTS here *****-->
+        <footer>
+            <a href="https://www.facebook.com/profile.php?id=100009371747823">facebook</a>
+            <a href="https://www.instagram.com/_irfan__sk_/">instagram</a>
+            <a href="https://github.com/irfansk-22">github</a>
+            <p class="copyright">
+                &copy; Technical-Docs Page | Made by Irfan Shaikh
+            </p>
+        </footer>
+        <!--**X** Footer ENDS here **X**-->
+
+
+    </div>
+    <!--[CONTAINER] ENDS here-->
+</body>
+
+</html>
