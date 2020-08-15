@@ -223,11 +223,11 @@ footer > a {
 
     /* About Express Module */
     .module-intro {
-        padding: 0 12px;
+        padding: 0 16px;
     }
 
     /* Main Section */
     #main-doc {
-        padding: 0 12px;
+        padding: 0 16px;
     }
 } 
